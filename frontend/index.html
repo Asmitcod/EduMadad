@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Student Loan Navigator</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Find the Best Student Loan Schemes</h1>
+    <form id="filterForm">
+      <input type="number" name="interest_rate_max" placeholder="Max Interest Rate (%)" />
+      <input type="text" name="repayment_period" placeholder="Repayment Period (e.g. 5 years)" />
+      <input type="number" name="maximum_amount_min" placeholder="Min Loan Amount" />
+      <input type="number" name="marks_10th" placeholder="10th Marks (%)" />
+      <input type="number" name="marks_12th" placeholder="12th Marks (%)" />
+      <input type="text" name="eligible_states" placeholder="State (e.g. Maharashtra)" />
+      <input type="text" name="eligible_castes" placeholder="Caste (e.g. SC)" />
+      <input type="text" name="eligible_genders" placeholder="Gender (e.g. Female)" />
+      <input type="text" name="parent1_profession" placeholder="Parent 1 Profession" />
+      <input type="text" name="parent2_profession" placeholder="Parent 2 Profession" />
+      <input type="text" name="govt_achievements" placeholder="Govt Achievements (if any)" />
+      <button type="submit">Search</button>
+    </form>
+
+    <div id="results"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
