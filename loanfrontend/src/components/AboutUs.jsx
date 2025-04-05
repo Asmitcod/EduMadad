@@ -48,24 +48,24 @@ const AboutUs = () => {
   
   const team = [
     {
-      name: "Ananya Desai",
+      name: "Praneeth Sangnal",
       role: "Founder & CEO",
-      image: "https://randomuser.me/api/portraits/women/20.jpg"
+      image: ".jpg"
     },
     {
-      name: "Vivek Mehta",
+      name: "Nikit Joshi",
       role: "Chief Technology Officer",
-      image: "https://randomuser.me/api/portraits/men/22.jpg"
+      image: ".jpg"
     },
     {
-      name: "Sanjana Kapoor",
+      name: "Asmit Bisht",
       role: "Financial Advisor",
-      image: "https://randomuser.me/api/portraits/women/23.jpg"
+      image: ".jpg"
     },
     {
-      name: "Aryan Choudhury",
+      name: "Rajsekhar Singha Roy",
       role: "Education Specialist",
-      image: "https://randomuser.me/api/portraits/men/24.jpg"
+      image: ".jpg"
     }
   ];
   
