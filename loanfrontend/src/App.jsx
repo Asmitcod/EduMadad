@@ -17,17 +17,22 @@ import Footer from './components/Footer';
 import LoanBuddy from './components/LoanBuddy';
 import RepaymentPlanAdvisor from './pages/RepaymentPlanAdvisor';
 import PersonalFinanceTracker from './pages/PersonalFinanceTracker';
-import LoanEligibility from './pages/LoanEligibility'; // ✅ NEW IMPORT
+import LoanEligibility from './pages/LoanEligibility'; // Import the LoanEligibility component
 
 const queryClient = new QueryClient();
 
 const App = () => {
   const [isDarkMode, setIsDarkMode] = useState(() => {
+    // Check localStorage first
     const storedTheme = localStorage.getItem('theme');
-    if (storedTheme) return storedTheme === 'dark';
+    if (storedTheme) {
+      return storedTheme === 'dark';
+    }
+    // Fallback to system preference
     return window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
   });
-
+  
+  // Apply dark mode class
   useEffect(() => {
     if (isDarkMode) {
       document.documentElement.classList.add('dark');
@@ -37,7 +42,7 @@ const App = () => {
       localStorage.setItem('theme', 'light');
     }
   }, [isDarkMode]);
-
+  
   const toggleTheme = () => {
     setIsDarkMode(prev => !prev);
   };
@@ -47,7 +52,7 @@ const App = () => {
       <TooltipProvider>
         <BrowserRouter>
           <Navbar toggleTheme={toggleTheme} isDarkMode={isDarkMode} />
-
+          
           <Routes>
             <Route path="/" element={
               <main>
@@ -61,12 +66,12 @@ const App = () => {
             } />
             <Route path="/repayment-plan-advisor" element={<RepaymentPlanAdvisor />} />
             <Route path="/personal-finance-tracker" element={<PersonalFinanceTracker />} />
-            <Route path="/loan-eligibility" element={<LoanEligibility />} /> {/* ✅ NEW ROUTE */}
+            <Route path="/loan-eligibility" element={<LoanEligibility />} /> {/* Add this route for loan eligibility */}
           </Routes>
-
+          
           <Footer />
           <LoanBuddy />
-
+          
           <Toaster />
           <Sonner />
         </BrowserRouter>
