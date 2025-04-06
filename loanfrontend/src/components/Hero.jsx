@@ -32,10 +32,10 @@ const Hero = () => {
             <Link to="/loan-eligibility" className="btn-primary">
               Check Loan Eligibility
             </Link>
-            <a href="#calculator" className="bg-muted hover:bg-muted/80 text-foreground font-semibold py-2 px-4 rounded-md transition-all duration-300 flex items-center justify-center gap-2">
+            {/* <a href="#calculator" className="bg-muted hover:bg-muted/80 text-foreground font-semibold py-2 px-4 rounded-md transition-all duration-300 flex items-center justify-center gap-2">
               <span>Learn More</span>
               <ArrowRight size={18} />
-            </a>
+            </a> */}
           </div>
         </div>
 

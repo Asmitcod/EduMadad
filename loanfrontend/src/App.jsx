@@ -9,7 +9,7 @@ import { TooltipProvider } from "@/components/ui/tooltip";
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
 import WhatWeOffer from './components/WhatWeOffer';
-import RegisterLogin from './components/RegisterLogin';
+// import RegisterLogin from './components/RegisterLogin';
 import Testimonials from './components/Testimonials';
 import FAQ from './components/FAQ';
 import AboutUs from './components/AboutUs';
@@ -58,7 +58,7 @@ const App = () => {
               <main>
                 <Hero />
                 <WhatWeOffer />
-                <RegisterLogin />
+                {/* <RegisterLogin /> */}
                 <Testimonials />
                 <FAQ />
                 <AboutUs />

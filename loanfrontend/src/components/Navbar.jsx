@@ -95,7 +95,7 @@ const Navbar = ({ toggleTheme, isDarkMode }) => {
             {/* Navigation Links */}
             <div className="hidden md:flex items-center space-x-6">
               <Link to="/repayment-plan-advisor" className="navbar-link">AI Repayment Plan</Link>
-              <a href="#calculator" className="navbar-link">EMI Calculator</a>
+              {/* <a href="#calculator" className="navbar-link">EMI Calculator</a> */}
               <Link to="/personal-finance-tracker" className="navbar-link">Personal Finance Tracker</Link>
             </div>
 

@@ -49,23 +49,23 @@ const AboutUs = () => {
   const team = [
     {
       name: "Praneeth Sangnal",
-      role: "Founder & CEO",
-      image: ".jpg"
+      role: "Co-Founder",
+      image: "/pra.jpg"
     },
     {
       name: "Nikit Joshi",
-      role: "Chief Technology Officer",
-      image: ".jpg"
+      role: "Co-Founder",
+      image: "/nik.jpg"
     },
     {
       name: "Asmit Bisht",
-      role: "Financial Advisor",
-      image: ".jpg"
+      role: "Co-Founder",
+      image: "/asm.jpg"
     },
     {
       name: "Rajsekhar Singha Roy",
-      role: "Education Specialist",
-      image: ".jpg"
+      role: "Co-Founder",
+      image: "/raj.jpg"
     }
   ];
   
